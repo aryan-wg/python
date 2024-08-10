@@ -1,8 +1,14 @@
 """ this file will be conserned with storing and retriving data from a list """
+import json
 # from .... import another_file_in_root 
 
 # another_file_in_root.print_another()
-books = []
+data_file = open("data.txt","+r") 
+books = data_file.readlines()
+
+def json_to_dict(json):
+    
+
 
 def add_book(book):
     books.append(book)
